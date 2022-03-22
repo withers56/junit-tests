@@ -41,8 +41,9 @@ public class StudentTest {
         s1.addGrade(99);
         s1.addGrade(90);
 
-        for (int i = 0; i < testGrades.size(); i++) {
-            assertEquals(testGrades.get(i), s1.getGrades().get(i));
-        }
+//        for (int i = 0; i < testGrades.size(); i++) {
+//            assertEquals(testGrades.get(i), s1.getGrades().get(i));
+//        }
+        assertEquals(testGrades, s1.getGrades());
     }
 }
